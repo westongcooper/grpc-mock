@@ -1,5 +1,5 @@
 const { createServer } = require('grpc-kit');
-const { Metadata } = require('grpc');
+const { Metadata } = require('@grpc/grpc-js');
 const partial_compare = require('partial-compare');
 const UNEXPECTED_INPUT_PATTERN_ERROR = {
   code: 3,
@@ -72,7 +72,7 @@ class HandlerFactory {
 
       /*
        * On each request handlers are generated for that request based on the
-       * defined rules. It is possible, if there are multiple rules for a 
+       * defined rules. It is possible, if there are multiple rules for a
        * method, that mutiple handlers will get generated and each will
        * attempt to process the incoming messages. This can lead to multiple
        * handlers attempting to respond and all sort of nastiness happens.
@@ -127,7 +127,7 @@ class HandlerFactory {
                   }
                 }, true);
                 const matched = included && memo.length === stream.length;
-  
+
                 if (matched) {
                   if (error) {
                     response.error = error;
