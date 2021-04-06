@@ -1,5 +1,5 @@
 const { createServer } = require('grpc-kit');
-const { Metadata } = require('@grpc/grpc-js');
+const { Metadata } = require('grpc');
 const partial_compare = require('partial-compare');
 const UNEXPECTED_INPUT_PATTERN_ERROR = {
   code: 3,
