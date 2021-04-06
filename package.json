@@ -22,8 +22,8 @@
   "homepage": "https://github.com/YoshiyukiKato/grpc-mock#readme",
   "dependencies": {
     "@grpc/proto-loader": "^0.5.6",
-    "grpc": "^1.17.0",
-    "grpc-kit": "git+ssh://git@github.com:westongcooper/grpc-kit.git#41bf08f965a2a6ba3c8dec0cf68962bd120b8849",
+    "@grpc/grpc-js": "^1.2.12",
+    "grpc-kit": "git+ssh://git@github.com:westongcooper/grpc-kit.git#460a06e311aff22d7ba623dbb7850ef1976be9ee",
     "partial-compare": "^1.0.1"
   },
   "devDependencies": {
