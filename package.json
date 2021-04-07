@@ -23,7 +23,7 @@
   "dependencies": {
     "@grpc/proto-loader": "^0.5.6",
     "@grpc/grpc-js": "^1.2.12",
-    "grpc-kit": "git+ssh://git@github.com:westongcooper/grpc-kit.git#460a06e311aff22d7ba623dbb7850ef1976be9ee",
+    "grpc-kit": "git+https://github.com/westongcooper/grpc-kit.git",
     "partial-compare": "^1.0.1"
   },
   "devDependencies": {
